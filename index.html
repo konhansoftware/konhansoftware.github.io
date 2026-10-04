@@ -1,268 +1,1189 @@
 <!DOCTYPE html>
-<html lang="tr" class="scroll-smooth">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konhan Software | Mobil & Masaüstü Yazılım Çözümleri</title>
-  <meta name="description" content="Konhan Software; iOS, Android (Flutter), masaüstü sistemler ve kurumsal yazılım mimarileri geliştiren bağımsız yazılım stüdyosu.">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO & Sosyal Medya Meta Etiketleri -->
+  <title>Konhan Software | Geleceğin Yazılım & Yapay Zekâ Çözümleri</title>
+  <meta name="description" content="Konhan Software; kurumsal SaaS platformları, yapay zekâ ve derin öğrenme entegrasyonları, yüksek performanslı bulut mimarileri ve özel yazılım çözümleri sunar.">
+  <meta name="keywords" content="Konhan Software, yazılım şirketi, yapay zekâ, SaaS, bulut mimarisi, web geliştirme, mobil uygulama, kurumsal yazılım, microservices">
+  <meta name="author" content="Konhan Software">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://konhansoftware.github.io/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://konhansoftware.github.io/">
+  <meta property="og:title" content="Konhan Software | Yeni Nesil Kurumsal Yazılım Stüdyosu">
+  <meta property="og:description" content="İşinizi geleceğe taşıyan güvenilir, ölçeklenebilir ve yapay zekâ destekli modern yazılım sistemleri.">
+  <meta property="og:image" content="assets/images/hero-tech.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://konhansoftware.github.io/">
+  <meta name="twitter:title" content="Konhan Software | Kurumsal Teknoloji Çözümleri">
+  <meta name="twitter:description" content="Yeni nesil bulut & yapay zekâ destekli kurumsal yazılım mühendisliği.">
+  <meta name="twitter:image" content="assets/images/hero-tech.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366f1'/><path d='M30 65 L48 35 L56 48 L44 65 Z M56 48 L68 65 L44 65' fill='%23ffffff'/><circle cx='68' cy='35' r='8' fill='%2306b6d4'/></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-    .glass-card {
-      background: rgba(15, 23, 42, 0.65);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .glass-card:hover {
-      border-color: rgba(56, 189, 248, 0.35);
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 (İkon Kütüphanesi) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Ana Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-[#090A0F] text-slate-200 antialiased selection:bg-sky-500 selection:text-white">
+<body>
 
-  <!-- Navigation -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-[#090A0F]/80 backdrop-blur-md border-b border-white/5">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 group">
-        <!-- Minimalist K-Monolith Logo Icon -->
-        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-900 to-black border border-white/10 flex items-center justify-center p-2 shadow-inner">
-          <svg viewBox="0 0 100 100" class="w-full h-full text-white" fill="currentColor">
-            <rect x="10" y="10" width="16" height="80" rx="2" fill="#FFFFFF"/>
-            <polygon points="36,50 78,12 95,12 48,55" fill="#FFFFFF"/>
-            <polygon points="42,46 95,90 78,90 28,52" fill="#38BDF8"/>
-          </svg>
-        </div>
-        <div class="flex flex-col">
-          <span class="text-xl font-black tracking-wider text-white uppercase font-mono">KONHAN</span>
-          <span class="text-[9px] font-semibold tracking-[0.25em] text-sky-400 uppercase -mt-1">SOFTWARE</span>
-        </div>
-      </a>
+  <!-- Arka Plan Dinamik Ambient Işıklar & Grid Izgarası -->
+  <div class="ambient-glow-wrap" aria-hidden="true">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+  </div>
+  <div class="ambient-grid" aria-hidden="true"></div>
 
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
-        <a href="#services" class="hover:text-white transition-colors">Hizmetler</a>
-        <a href="#tech" class="hover:text-white transition-colors">Teknolojiler</a>
-        <a href="#process" class="hover:text-white transition-colors">Süreç</a>
-        <a href="#about" class="hover:text-white transition-colors">Hakkımızda</a>
-      </nav>
-
-      <div class="flex items-center gap-4">
-        <a href="#contact" class="px-5 py-2.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold text-sm transition-all shadow-lg shadow-sky-500/20 active:scale-95">
-          İletişime Geç
+  <!-- ===================================================================
+       HEADER & NAVİGASYON
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav-wrap" aria-label="Ana Gezinti Menüsü">
+        <!-- Logo -->
+        <a href="#" class="brand-logo" title="Konhan Software Ana Sayfa">
+          <div class="brand-icon-box">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <span class="brand-text">KONHAN <span>SOFTWARE</span></span>
         </a>
-      </div>
+
+        <!-- Masaüstü Navigasyon Linkleri -->
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+          <li><a href="#services" class="nav-link">Hizmetler</a></li>
+          <li><a href="#tech" class="nav-link">Teknolojiler</a></li>
+          <li><a href="#projects" class="nav-link">Projeler</a></li>
+          <li><a href="#process" class="nav-link">Süreç</a></li>
+          <li><a href="#estimator" class="nav-link">Hesaplayıcı</a></li>
+          <li><a href="#faq" class="nav-link">SSS</a></li>
+        </ul>
+
+        <!-- Butonlar & Mobil Toggle -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-paper-plane"></i> Teklif Al
+          </a>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü Aç/Kapat">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobil Açılır Çekmece Menü -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <a href="#about" class="nav-link">Hakkımızda</a>
+      <a href="#services" class="nav-link">Hizmetler</a>
+      <a href="#tech" class="nav-link">Teknolojiler</a>
+      <a href="#projects" class="nav-link">Projeler</a>
+      <a href="#process" class="nav-link">Çalışma Sürecimiz</a>
+      <a href="#estimator" class="nav-link">Süre & Kapsam Hesaplayıcı</a>
+      <a href="#faq" class="nav-link">Sıkça Sorulan Sorular</a>
+      <a href="#contact" class="btn btn-primary">
+        <i class="fa-solid fa-envelope"></i> İletişime Geç
+      </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="pt-40 pb-24 px-6 relative overflow-hidden">
-    <!-- Ambient Light Glows -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-sky-500/10 blur-[130px] rounded-full pointer-events-none"></div>
-
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-sky-400 mb-8">
-        <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-        Mobil & Masaüstü Yazılım Çözümleri
-      </div>
-
-      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
-        Fikirlerinizi Yüksek Performanslı <br class="hidden sm:inline">
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400">Dijital Ürünlere</span> Dönüştürüyoruz.
-      </h1>
-
-      <p class="text-lg sm:text-xl text-slate-400 font-normal max-w-2xl mx-auto leading-relaxed mb-10">
-        Konhan Software; modern mimariler, çapraz platform mobil uygulamalar ve kurumsal masaüstü sistemleriyle işletmenizin dijital altyapısını güçlendirir.
-      </p>
-
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white text-slate-950 hover:bg-slate-200 font-bold text-base transition-all shadow-lg shadow-white/10">
-          Projenizi Başlatın
-        </a>
-        <a href="#services" class="w-full sm:w-auto px-8 py-3.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium text-base transition-all">
-          Hizmetlerimizi İnceleyin
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-24 px-6 border-t border-white/5 bg-[#0B0D14]">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-xs font-bold tracking-[0.2em] text-sky-400 uppercase mb-3">Uzmanlık Alanlarımız</h2>
-        <h3 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Hizmetlerimiz</h3>
-        <p class="text-slate-400 mt-4 text-base">İhtiyacınıza uygun, kararlı ve ölçeklenebilir özel yazılım mühendisliği.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Service 1: Mobil Uygulama -->
-        <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-3">Mobil Uygulama Geliştirme</h4>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Flutter altyapısıyla iOS ve Android platformlarında yerel performans sunan, akıcı ve kullanıcı deneyimi yüksek mobil uygulamalar.
-          </p>
-          <ul class="text-xs text-slate-400 space-y-2 font-medium">
-            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> Çapraz Platform (iOS & Android)</li>
-            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> App Store & Google Play Yayını</li>
-            <li class="flex items-center gap-2"><span class="text-sky-400">✓</span> Firebase & REST Entegrasyonu</li>
-          </ul>
-        </div>
-
-        <!-- Service 2: Masaüstü & Kurumsal Sistemler -->
-        <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-3">Masaüstü & Otomasyon</h4>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Python ve PyQt teknolojileriyle işletmelerin iç süreçlerini hızlandıran, veri işleme ve yönetim otomasyonu yazılımları.
-          </p>
-          <ul class="text-xs text-slate-400 space-y-2 font-medium">
-            <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> Özel Yönetim Panelleri</li>
-            <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> SQL Server & SQLite Mimarisi</li>
-            <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> Hızlı ve Kararlı Yerel Çalışma</li>
-          </ul>
-        </div>
-
-        <!-- Service 3: API & Bulut Entegrasyonu -->
-        <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-          </div>
-          <h4 class="text-xl font-bold text-white mb-3">Bulut & Veri Tabanı Mimarisi</h4>
-          <p class="text-slate-400 text-sm leading-relaxed mb-4">
-            Güvenli, yedekli ve hızlı veri akışı sağlayan bulut altyapıları, RESTful API servisleri ve kurumsal veri tabanı yönetimi.
-          </p>
-          <ul class="text-xs text-slate-400 space-y-2 font-medium">
-            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Bulut Senkronizasyonu</li>
-            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Yüksek Güvenlik & Doğrulama</li>
-            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Üçüncü Parti API Entegrasyonları</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tech Stack -->
-  <section id="tech" class="py-20 px-6 border-t border-white/5">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-xs font-bold tracking-[0.2em] text-slate-500 uppercase mb-8">Kullandığımız Modern Teknolojiler</h2>
-      <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6 max-w-4xl mx-auto">
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Flutter</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Dart</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">iOS (Swift / App Store)</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Android</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Python</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">PyQt</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">SQL Server</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">SQLite</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Firebase</span>
-        <span class="px-5 py-2.5 rounded-lg bg-white/5 border border-white/10 text-sm font-semibold text-slate-300">Git & GitHub</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Process -->
-  <section id="process" class="py-24 px-6 border-t border-white/5 bg-[#0B0D14]">
-    <div class="max-w-7xl mx-auto">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="text-xs font-bold tracking-[0.2em] text-sky-400 uppercase mb-3">Çalışma Yöntemimiz</h2>
-        <h3 class="text-3xl font-bold text-white tracking-tight">Sıfırdan Canlıya 4 Adım</h3>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 rounded-xl bg-white/[0.02] border border-white/5">
-          <span class="text-2xl font-mono font-bold text-sky-400">01</span>
-          <h4 class="text-lg font-bold text-white mt-4 mb-2">Analiz & Kapsam</h4>
-          <p class="text-slate-400 text-sm leading-relaxed">İhtiyaçlarınızı ve sistem hedeflerinizi detaylıca analiz edip net bir yol haritası çıkarıyoruz.</p>
-        </div>
-        <div class="p-6 rounded-xl bg-white/[0.02] border border-white/5">
-          <span class="text-2xl font-mono font-bold text-sky-400">02</span>
-          <h4 class="text-lg font-bold text-white mt-4 mb-2">Mimari & Tasarım</h4>
-          <p class="text-slate-400 text-sm leading-relaxed">Kullanıcı deneyimi odaklı modern arayüzler ve sağlam veritabanı mimarisi kurguluyoruz.</p>
-        </div>
-        <div class="p-6 rounded-xl bg-white/[0.02] border border-white/5">
-          <span class="text-2xl font-mono font-bold text-sky-400">03</span>
-          <h4 class="text-lg font-bold text-white mt-4 mb-2">Çevik Geliştirme</h4>
-          <p class="text-slate-400 text-sm leading-relaxed">Temiz kod standartlarıyla modüler, test edilebilir ve hızlı çalışan yazılım üretiyoruz.</p>
-        </div>
-        <div class="p-6 rounded-xl bg-white/[0.02] border border-white/5">
-          <span class="text-2xl font-mono font-bold text-sky-400">04</span>
-          <h4 class="text-lg font-bold text-white mt-4 mb-2">Test & Dağıtım</h4>
-          <p class="text-slate-400 text-sm leading-relaxed">Uygulama mağazalarında (App Store / Play Console) yayına alma ve canlı destek süreçlerini yönetiyoruz.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-24 px-6 border-t border-white/5 relative">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-xs font-bold tracking-[0.2em] text-sky-400 uppercase mb-3">İletişim</h2>
-      <h3 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">Yeni Bir Projeye Başlayalım</h3>
-      <p class="text-slate-400 text-lg max-w-xl mx-auto mb-10">
-        Mobil uygulamanız, kurumsal masaüstü sisteminiz veya yazılım danışmanlığı ihtiyaçlarınız için doğrudan bize ulaşın.
-      </p>
-
-      <div class="glass-card rounded-3xl p-8 sm:p-12 max-w-2xl mx-auto text-left">
-        <div class="space-y-6">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+  <main>
+    <!-- ===================================================================
+         HERO SECTION (KARŞILAMA BÖLÜMÜ)
+         =================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Sol İçerik -->
+          <div class="hero-content">
+            <div class="badge">
+              <span class="badge-dot"></span> Yeni Nesil Yazılım & Ar-Ge Stüdyosu
             </div>
-            <div>
-              <div class="text-xs font-medium text-slate-400">E-Posta</div>
-              <a href="mailto:konhansoftware@gmail.com" class="text-base sm:text-lg font-semibold text-white hover:text-sky-400 transition-colors">
-                konhansoftware@gmail.com
+            <h1 class="hero-title">
+              Geleceği Şekillendiren <br>
+              <span class="text-gradient">Yazılım Çözümleri</span>
+            </h1>
+            <p class="hero-subtitle">
+              Konhan Software; işletmenizi modern çağın hızına ulaştıracak kurumsal SaaS platformları, yapay zekâ optimizasyonları ve yüksek dayanıklılığa sahip bulut mimarileri inşa eder.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#contact" class="btn btn-primary btn-lg">
+                <i class="fa-solid fa-bolt"></i> Projenizi Başlatın
+              </a>
+              <a href="#projects" class="btn btn-glass btn-lg">
+                <i class="fa-solid fa-layer-group"></i> Projelerimizi İnceleyin
+              </a>
+            </div>
+            <div class="hero-features-list">
+              <div class="hero-feat-item">
+                <i class="fa-solid fa-circle-check"></i> %99.9 Süreklilik SLA
+              </div>
+              <div class="hero-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Sıfır Güvenlik Açığı Prensibi
+              </div>
+              <div class="hero-feat-item">
+                <i class="fa-solid fa-circle-check"></i> Çevik (Agile) Sprint Teslimatı
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ Görsel & İnteraktif Kart -->
+          <div class="hero-visual-card">
+            <div class="hero-img-wrap">
+              <img src="assets/images/hero-tech.jpg" alt="Konhan Software Yüksek Performanslı Bulut Mimarisi">
+              <div class="hero-img-overlay"></div>
+            </div>
+
+            <!-- Yüzen Dinamik Rozet 1 -->
+            <div class="floating-stat-badge pos-top-right">
+              <div class="floating-stat-icon icon-purple">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="floating-stat-info">
+                <span class="title">Yapay Zekâ Motoru</span>
+                <span class="val">Aktif & Otonom</span>
+              </div>
+            </div>
+
+            <!-- Yüzen Dinamik Rozet 2 -->
+            <div class="floating-stat-badge pos-bottom-left">
+              <div class="floating-stat-icon icon-cyan">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <div class="floating-stat-info">
+                <span class="title">Mühendislik Kalitesi</span>
+                <span class="val">Enterprise Grade</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         METRİKLER & İSTATİSTİK ŞERİDİ
+         =================================================================== -->
+    <section class="stats-banner" aria-label="İstatistik Göstergeleri">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-number" data-target="50" data-suffix="+">0</span>
+            <span class="stat-label">Tamamlanan Kurumsal Proje</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="99.9" data-suffix="%">0</span>
+            <span class="stat-label">Sistem Uptime & Dayanıklılık</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="100" data-suffix="%">0</span>
+            <span class="stat-label">Müşteri Memnuniyeti</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number" data-target="24" data-suffix="/7">0</span>
+            <span class="stat-label">Kesintisiz İzleme & Destek</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         HAKKIMIZDA & İNTERAKTİF TERMİNAL BÖLÜMÜ
+         =================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-building"></i> Kurumsal Vizyon
+          </div>
+          <h2 class="section-title">
+            Teknolojiye Tutkuyla, <span class="text-gradient">Geleceğe Güvenle</span>
+          </h2>
+          <p class="section-desc">
+            Konhan Software, dijital dönüşüm yolculuğunda kurumlara güvenilir bir teknoloji ortağı olmak amacıyla kurulmuştur. Sektör standartlarının ötesine geçen modern yazılım mimarimizle fikirleri global ürünlere dönüştürüyoruz.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Sol Sütun: Temel Prensipler -->
+          <div class="about-text">
+            <div class="about-pillars">
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h4>Hızlı Dağıtım</h4>
+                <p>Otomatize CI/CD süreçleri ile geliştirilen modülleri anında ve kesintisiz yayına alıyoruz.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-shield-virus"></i>
+                </div>
+                <h4>Güvenlik Odaklı</h4>
+                <p>OWASP ilkelerine tam uyumlu, uçtan uca şifrelemeli veri güvenliği altyapısı kuruyoruz.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <h4>Mikroservisler</h4>
+                <p>Büyüyen iş hacminizi dar boğaza sokmayan, bağımsız ölçeklenebilen mikroservis mimarisi.</p>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon">
+                  <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h4>Yapay Zekâ Entegre</h4>
+                <p>LLM, NLP ve öngörücü analitik modellerini iş akışlarınıza derinlemesine entegre ediyoruz.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ Sütun: İnteraktif Kod / Mimari Terminali -->
+          <div class="tech-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title">konhan-core-architecture</div>
+            </div>
+            
+            <div class="terminal-tabs">
+              <button class="term-tab active" data-lang="typescript">TypeScript</button>
+              <button class="term-tab" data-lang="python">Python / AI</button>
+              <button class="term-tab" data-lang="devops">Kubernetes / Spec</button>
+            </div>
+
+            <div class="terminal-body">
+              <pre><code id="termCodeOutput"><span class="code-comment">// Konhan Cloud Native API Service</span>
+<span class="code-keyword">import</span> { Microservice, SecureEngine } <span class="code-keyword">from</span> <span class="code-string">'@konhan/core'</span>;
+
+<span class="code-keyword">export class</span> <span class="code-function">EnterpriseGateway</span> {
+  <span class="code-keyword">private readonly</span> engine: SecureEngine;
+
+  <span class="code-keyword">constructor</span>() {
+    <span class="code-keyword">this</span>.engine = <span class="code-keyword">new</span> <span class="code-function">SecureEngine</span>({
+      <span class="code-property">region</span>: <span class="code-string">'eu-central-1'</span>,
+      <span class="code-property">scalability</span>: <span class="code-string">'auto'</span>,
+      <span class="code-property">encryption</span>: <span class="code-string">'AES-256-GCM'</span>,
+      <span class="code-property">uptimeSLA</span>: <span class="code-string">'99.99%'</span>
+    });
+  }
+
+  <span class="code-keyword">async</span> <span class="code-function">dispatchMissionCritical</span>(payload: Payload): Promise&lt;Result&gt; {
+    <span class="code-keyword">return await this</span>.engine.<span class="code-function">executeHighThroughput</span>(payload);
+  }
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         HİZMETLERİMİZ (SERVICES)
+         =================================================================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-gears"></i> Uzmanlık Alanlarımız
+          </div>
+          <h2 class="section-title">
+            Uçtan Uca <span class="text-gradient">Mühendislik Çözümleri</span>
+          </h2>
+          <p class="section-desc">
+            İşletmenizin ihtiyaç duyduğu tüm teknoloji altyapısını dünya standartlarında tasarlıyor, geliştiriyor ve canlıya alıyoruz.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Hizmet 1 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3 class="service-title">Özel SaaS & Web Platformları</h3>
+            <p class="service-desc">
+              Yüksek kullanıcı trafiğini sıfır gecikmeyle karşılayan, modern arayüzlü ve ölçeklenebilir bulut tabanlı web uygulamaları.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Reaktif ve Dinamik UI / UX</li>
+              <li><i class="fa-solid fa-check"></i> Çok Kiracılı (Multi-Tenant) Altyapı</li>
+              <li><i class="fa-solid fa-check"></i> Yüksek Hızlı API Entegrasyonu</li>
+            </ul>
+          </div>
+
+          <!-- Hizmet 2 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 class="service-title">Yapay Zekâ & LLM Sistemleri</h3>
+            <p class="service-desc">
+              Şirketinizin veri havuzunu akıllı asistanlara, öngörücü modellere ve otomatik karar alma motorlarına dönüştürüyoruz.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> RAG & Vektör Veritabanı Mimarisi</li>
+              <li><i class="fa-solid fa-check"></i> Özel Eğitilmiş Model Entegrasyonu</li>
+              <li><i class="fa-solid fa-check"></i> Anomali & Trend Analitiği</li>
+            </ul>
+          </div>
+
+          <!-- Hizmet 3 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <h3 class="service-title">Cross-Platform Mobil Uygulamalar</h3>
+            <p class="service-desc">
+              iOS ve Android platformlarında yerel performans sunan, akıcı animasyonlara ve çevrimdışı çalışma kabiliyetine sahip mobil çözümler.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Tek Kod Tabanıyla Çift Platform</li>
+              <li><i class="fa-solid fa-check"></i> Biyometrik Doğrulama & Bildirimler</li>
+              <li><i class="fa-solid fa-check"></i> App Store & Play Store Dağıtımı</li>
+            </ul>
+          </div>
+
+          <!-- Hizmet 4 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3 class="service-title">Bulut & DevOps Otomasyonu</h3>
+            <p class="service-desc">
+              AWS, GCP ve Azure ortamlarında Kubernetes orkestrasyonu, otomatik ölçeklenme ve sıfır kesintili CI/CD hatları.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Infrastructure as Code (Terraform)</li>
+              <li><i class="fa-solid fa-check"></i> Docker & Kubernetes Kümeleri</li>
+              <li><i class="fa-solid fa-check"></i> Otomatik Yedekleme & Felaket Kurtarma</li>
+            </ul>
+          </div>
+
+          <!-- Hizmet 5 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <h3 class="service-title">API & Mikroservis Mimarisi</h3>
+            <p class="service-desc">
+              Monolitik yapıları bağımsız servis kümelerine dönüştürerek yüksek işlem hızları ve kolay bakım imkanı sağlıyoruz.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> RESTful & GraphQL / gRPC Uçları</li>
+              <li><i class="fa-solid fa-check"></i> Mesaj Kuyrukları (Kafka, RabbitMQ)</li>
+              <li><i class="fa-solid fa-check"></i> Kapsamlı Swagger / OpenAPI Dökümantasyonu</li>
+            </ul>
+          </div>
+
+          <!-- Hizmet 6 -->
+          <div class="service-card">
+            <div class="service-icon-wrap">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3 class="service-title">Siber Güvenlik & Kod Denetimi</h3>
+            <p class="service-desc">
+              Mevcut kod tabanlarınızın güvenlik açıklarını tespit ediyor, pentest simülasyonları ile sistemlerinizi koruma altına alıyoruz.
+            </p>
+            <ul class="service-features">
+              <li><i class="fa-solid fa-check"></i> Statik Kod Analizi & Zafiyet Taraması</li>
+              <li><i class="fa-solid fa-check"></i> KVKK & GDPR Veri Uyum Standartları</li>
+              <li><i class="fa-solid fa-check"></i> Rol Tabanlı Yetkilendirme (RBAC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         TEKNOLOJİ YIĞINI (TECH STACK)
+         =================================================================== -->
+    <section class="section" id="tech">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-layer-group"></i> Teknoloji Ekosistemimiz
+          </div>
+          <h2 class="section-title">
+            En Güncel <span class="text-gradient">Modern Teknolojiler</span>
+          </h2>
+          <p class="section-desc">
+            Hız, kararlılık ve uzun ömürlü yazılım mimarisi için sektörün en güvenilir ve performanslı araçlarını kullanıyoruz.
+          </p>
+        </div>
+
+        <!-- Filtre Sekmeleri -->
+        <div class="tech-tabs">
+          <button class="tech-tab-btn active" data-filter="all">Tümü</button>
+          <button class="tech-tab-btn" data-filter="frontend">Frontend</button>
+          <button class="tech-tab-btn" data-filter="backend">Backend & API</button>
+          <button class="tech-tab-btn" data-filter="cloud">Cloud & DevOps</button>
+          <button class="tech-tab-btn" data-filter="ai">AI & Veri</button>
+        </div>
+
+        <!-- Teknoloji Kartları -->
+        <div class="tech-grid">
+          <!-- Frontend -->
+          <div class="tech-item" data-category="frontend">
+            <i class="fa-brands fa-react"></i>
+            <span>React / Next.js</span>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <i class="fa-brands fa-vuejs"></i>
+            <span>Vue.js</span>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <i class="fa-brands fa-js"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="tech-item" data-category="frontend">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML5 & CSS3</span>
+          </div>
+
+          <!-- Backend -->
+          <div class="tech-item" data-category="backend">
+            <i class="fa-brands fa-node"></i>
+            <span>Node.js / Nest</span>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <i class="fa-brands fa-python"></i>
+            <span>Python / FastAPI</span>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <i class="fa-brands fa-golang"></i>
+            <span>Golang</span>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <i class="fa-solid fa-database"></i>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item" data-category="backend">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <span>Redis Cache</span>
+          </div>
+
+          <!-- Cloud -->
+          <div class="tech-item" data-category="cloud">
+            <i class="fa-brands fa-docker"></i>
+            <span>Docker</span>
+          </div>
+          <div class="tech-item" data-category="cloud">
+            <i class="fa-solid fa-dharmachakra"></i>
+            <span>Kubernetes</span>
+          </div>
+          <div class="tech-item" data-category="cloud">
+            <i class="fa-brands fa-aws"></i>
+            <span>AWS Cloud</span>
+          </div>
+          <div class="tech-item" data-category="cloud">
+            <i class="fa-brands fa-google"></i>
+            <span>Google Cloud</span>
+          </div>
+
+          <!-- AI -->
+          <div class="tech-item" data-category="ai">
+            <i class="fa-solid fa-brain"></i>
+            <span>PyTorch & TF</span>
+          </div>
+          <div class="tech-item" data-category="ai">
+            <i class="fa-solid fa-microchip"></i>
+            <span>OpenAI & LLM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         PROJELER & BAŞARI HİKAYELERİ (SHOWCASE)
+         =================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-briefcase"></i> Portfolyo & Vaka Çalışmaları
+          </div>
+          <h2 class="section-title">
+            Hayata Geçirdiğimiz <span class="text-gradient">İnovatif Projeler</span>
+          </h2>
+          <p class="section-desc">
+            Farklı sektörlerdeki kurumsal ortaklarımız için geliştirdiğimiz yüksek etkili çözümlerden bazıları.
+          </p>
+        </div>
+
+        <!-- Öne Çıkan Ana Proje Banner -->
+        <div class="showcase-featured-banner">
+          <div class="showcase-featured-img">
+            <img src="assets/images/showcase-app.jpg" alt="Nexus AI Kurumsal Platform Arayüzü">
+          </div>
+          <div class="showcase-featured-content">
+            <div class="badge">
+              <span class="badge-dot"></span> Amiral Gemisi Çözüm
+            </div>
+            <h3 class="hero-title" style="font-size: 2rem;">Nexus AI: Kurumsal Karar Destek Platformu</h3>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              Büyük veri setlerini gerçek zamanlı olarak tarayıp özetleyen, otomatik strateji raporları üreten ve şirket yönetim süreçlerini hızlandıran yeni nesil kurumsal yapay zekâ motoru.
+            </p>
+            <div class="project-tag-row">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">Vector DB</span>
+              <span class="project-tag">Docker</span>
+            </div>
+            <div class="project-metrics" style="margin-top: 0.5rem;">
+              <div class="metric-item">
+                <span class="metric-label">Verimlilik Artışı</span>
+                <span class="metric-val">+%45</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">İşlem Gecikmesi</span>
+                <span class="metric-val">&lt; 120ms</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Doğruluk Oranı</span>
+                <span class="metric-val">%99.4</span>
+              </div>
+            </div>
+            <button class="btn btn-primary open-project-modal" data-project="nexus" style="align-self: flex-start;">
+              Detaylı Bilgi & Vaka Analizi <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Diğer Projeler Grid -->
+        <div class="showcase-grid">
+          <!-- Proje 1 -->
+          <div class="project-card">
+            <div class="project-tag-row">
+              <span class="project-tag">FinTech</span>
+              <span class="project-tag">Golang</span>
+              <span class="project-tag">Kubernetes</span>
+            </div>
+            <h4 class="project-title">OmniPay: Yeni Nesil Ödeme Ağ Geçidi</h4>
+            <p class="project-desc">
+              Saniyede 15.000+ işlemi sıfır gecikmeyle gerçekleştiren, PCI-DSS Seviye 1 sertifikalı global fintek ve çoklu para birimli ödeme motoru.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">İşlem Hacmi</span>
+                <span class="metric-val">15K+ TPS</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Uptime Garantisi</span>
+                <span class="metric-val">99.999%</span>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm open-project-modal" data-project="omnipay">
+              İncele <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+
+          <!-- Proje 2 -->
+          <div class="project-card">
+            <div class="project-tag-row">
+              <span class="project-tag">IoT & Lojistik</span>
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Kafka</span>
+            </div>
+            <h4 class="project-title">LogiCloud: Küresel Filo & IoT Takip</h4>
+            <p class="project-desc">
+              3.000'den fazla aracın telemetri verilerini anlık analiz ederek rota optimizasyonu sağlayan ve yakıt sarfiyatını %28 düşüren lojistik çözümü.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Yakıt Tasarrufu</span>
+                <span class="metric-val">-%28</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Bağlı Cihaz</span>
+                <span class="metric-val">3.000+</span>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm open-project-modal" data-project="logicloud">
+              İncele <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+
+          <!-- Proje 3 -->
+          <div class="project-card">
+            <div class="project-tag-row">
+              <span class="project-tag">HealthTech</span>
+              <span class="project-tag">AI Diagnostics</span>
+              <span class="project-tag">Cloud</span>
+            </div>
+            <h4 class="project-title">MedVision: Radyolojik Görüntü Analizi</h4>
+            <p class="project-desc">
+              MR ve Tomografi görüntülerinde erken evre patolojileri saniyeler içinde tespit eden derin öğrenme tabanlı medikal asistan.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-item">
+                <span class="metric-label">Erken Teşhis</span>
+                <span class="metric-val">%98.1</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Analiz Süresi</span>
+                <span class="metric-val">3.2 sn</span>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm open-project-modal" data-project="nexus">
+              İncele <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ÇALIŞMA SÜRECİMİZ (PROCESS)
+         =================================================================== -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-route"></i> Metodolojimiz
+          </div>
+          <h2 class="section-title">
+            Fikirden Yayına <span class="text-gradient">4 Aşamalı Süreç</span>
+          </h2>
+          <p class="section-desc">
+            Şeffaf, ölçülebilir ve çevik mühendislik metodolojimizle projenizi zamanında ve bütçesinde teslim ediyoruz.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-num">01</div>
+            <h3 class="process-title">Keşif & Kapsam Analizi</h3>
+            <p class="process-desc">
+              İş hedeflerinizi, teknik gereksinimlerinizi ve kullanıcı kitlelerinizi detaylı workshop oturumlarında analiz ediyoruz.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">02</div>
+            <h3 class="process-title">Mimari Tasarım & UX</h3>
+            <p class="process-desc">
+              Mikroservis şemalarını, veritabanı ilişkilerini ve modern, sezgisel kullanıcı deneyimi prototiplerini hazırlıyoruz.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">03</div>
+            <h3 class="process-title">Çevik Sprint & Testler</h3>
+            <p class="process-desc">
+              İki haftalık sprintlerle kodluyor; birim, entegrasyon ve siber güvenlik testleriyle sıfır hata hedefliyoruz.
+            </p>
+          </div>
+
+          <div class="process-card">
+            <div class="process-step-num">04</div>
+            <h3 class="process-title">Canlıya Geçiş & Destek</h3>
+            <p class="process-desc">
+              Sıfır kesintili dağıtım (zero-downtime deploy), SLA garantili 7/24 izleme ve sürekli optimizasyon sunuyoruz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         İNTERAKTİF PROJE HESAPLAYICI (ESTIMATOR WIDGET)
+         =================================================================== -->
+    <section class="section" id="estimator">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-calculator"></i> İnteraktif Planlayıcı
+          </div>
+          <h2 class="section-title">
+            Projenizin Süresini <span class="text-gradient">Hemen Hesaplayın</span>
+          </h2>
+          <p class="section-desc">
+            Geliştirmek istediğiniz ürün tipini ve ihtiyaç duyduğunuz ek özellikleri seçerek tahmini teslimat sürenizi öğrenin.
+          </p>
+        </div>
+
+        <div class="estimator-card">
+          <div class="estimator-grid">
+            <!-- Sol Seçim Seçenekleri -->
+            <div class="estimator-options">
+              <div>
+                <h4 class="estimator-group-title">
+                  <i class="fa-solid fa-laptop-file"></i> 1. Proje Türünü Seçin
+                </h4>
+                <div class="estimator-pills">
+                  <div class="estimator-pill pill-type selected" data-weeks="6">
+                    Özel Web & SaaS Platformu
+                  </div>
+                  <div class="estimator-pill pill-type" data-weeks="8">
+                    Mobil Uygulama (iOS + Android)
+                  </div>
+                  <div class="estimator-pill pill-type" data-weeks="10">
+                    Yapay Zekâ & LLM Çözümü
+                  </div>
+                  <div class="estimator-pill pill-type" data-weeks="4">
+                    Kurumsal Web & Portfolyo
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h4 class="estimator-group-title">
+                  <i class="fa-solid fa-puzzle-piece"></i> 2. İhtiyaç Duyulan Modüller (Çoklu Seçim)
+                </h4>
+                <div class="estimator-pills">
+                  <div class="estimator-pill pill-feature selected" data-weeks="2">
+                    Kullanıcı Yetkilendirme & RBAC
+                  </div>
+                  <div class="estimator-pill pill-feature selected" data-weeks="2">
+                    Ödeme & Abonelik Altyapısı
+                  </div>
+                  <div class="estimator-pill pill-feature" data-weeks="3">
+                    Özel Yapay Zekâ / Chatbot Motoru
+                  </div>
+                  <div class="estimator-pill pill-feature" data-weeks="2">
+                    Çoklu Dil (i18n) Desteği
+                  </div>
+                  <div class="estimator-pill pill-feature" data-weeks="2">
+                    Canlı Telemetri & Analitik Dashboard
+                  </div>
+                  <div class="estimator-pill pill-feature" data-weeks="1">
+                    Otomatik E-posta / SMS Bildirimleri
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sağ Özet Kutusu -->
+            <div class="estimator-summary-box">
+              <span class="est-estimate-title">Tahmini Teslim Süresi</span>
+              <div class="est-timeline-val" id="estTimelineVal">8 - 11 Hafta</div>
+              
+              <ul class="est-specs-list" id="estFeatureSummary">
+                <!-- JS ile dinamik olarak güncellenir -->
+              </ul>
+
+              <a href="#contact" class="btn btn-primary" style="width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Bu Kapsam İçin Teklif Al
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+    <!-- ===================================================================
+         MÜŞTERİ YORUMLARI & GÜVEN (TESTIMONIALS)
+         =================================================================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-star"></i> Müşteri Deneyimi
+          </div>
+          <h2 class="section-title">
+            Ortaklarımızın <span class="text-gradient">Gözünden Konhan</span>
+          </h2>
+          <p class="section-desc">
+            Farklı sektörlerden lider markaların ekipleriyle kurduğumuz uzun soluklu iş birlikleri.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Yorum 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <div>
-              <div class="text-xs font-medium text-slate-400">Konum</div>
-              <div class="text-base sm:text-lg font-semibold text-white">Konya, Türkiye</div>
+            <p class="testimonial-quote">
+              "Konhan Software ekibi, SaaS platformumuzun mimarisini sıfırdan kurdu. Saniyeler süren sorgularımız artık milisaniyeler içinde sonuç veriyor. Mühendislik disiplinleri hayranlık uyandırıcı."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">EY</div>
+              <div class="author-info">
+                <h4>Emre Yılmaz</h4>
+                <p>CTO, FinEdge Global</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yorum 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Lojistik ağımızdaki 3000'den fazla aracın anlık telemetri takibini Konhan Software'in IoT mimarisi sayesinde hatasız yönetiyoruz. Yakıt maliyetlerimizde elde ettiğimiz düşüş muazzam."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SK</div>
+              <div class="author-info">
+                <h4>Selin Kaya</h4>
+                <p>Operasyon Direktörü, LogiTrans</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yorum 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Yapay zekâ karar destek algoritmalarımızı iş süreçlerimize sorunsuz şekilde entegre ettiler. İletişim kalitesi ve teknik yetkinlikleri en üst düzeyde."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">BD</div>
+              <div class="author-info">
+                <h4>Burak Demir</h4>
+                <p>Kurucu Ortak, DeepData Lab</p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="mt-8 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <a href="mailto:konhansoftware@gmail.com?subject=Proje%20Teklifi%20Hakk%C4%B1nda" class="w-full sm:w-auto text-center px-8 py-3.5 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-sky-500/20">
-            Hemen Teklif İsteyin ↗
+    <!-- ===================================================================
+         SIKÇA SORULAN SORULAR (FAQ)
+         =================================================================== -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-circle-question"></i> Merak Edilenler
+          </div>
+          <h2 class="section-title">
+            Sıkça Sorulan <span class="text-gradient">Sorular</span>
+          </h2>
+          <p class="section-desc">
+            Süreçlerimiz, güvenlik politikalarımız ve çalışma modelimiz hakkında en çok sorulan başlıklar.
+          </p>
+        </div>
+
+        <div class="faq-wrap">
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Proje geliştirme sürecinde nasıl bir metodoloji uyguluyorsunuz?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Geliştirme süreçlerimizde 2 haftalık çevik (Agile / Scrum) sprintleri uyguluyoruz. Her sprint bitiminde müşterimize çalışan bir yazılım prototipi sunuyor, şeffaf Jira/Trello panoları üzerinden ilerlemeyi anlık takip etmenizi sağlıyoruz.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Projenin kaynak kodları kime ait oluyor?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Geliştirilen tüm kaynak kodlar, veritabanı şemaları, mimari tasarım dökümanları ve telif hakları %100 müşterimize aittir. Proje tesliminde tüm GitHub depoları ve sunucu yetkileri eksiksiz devredilir.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Mevcut bir yazılım veya monolitik projemiz var, modernleştirebilir misiniz?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Kesinlikle. Eski veya ölçeklenmekte zorlanan monolit sistemlerinizi mikroservis mimarisine taşıyor, veri tabanı sorgularını optimize ediyor ve modern bulut sunucularına (Kubernetes / Docker) sıfır veri kaybıyla geçiriyoruz.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Canlıya geçtikten sonra bakım ve destek hizmeti veriyor musunuz?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              Evet. Tüm projelerimizde canlıya geçiş sonrası garanti süresi ve isteğe bağlı SLA (Hizmet Seviyesi Anlaşması) kapsamında 7/24 izleme, yedekleme, hata giderme ve versiyon yükseltme desteği sunmaktayız.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Fiyatlandırma ve teklif süreci nasıl işliyor?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              İletişim formumuz veya toplantımız sonrasında gereksinimlerinizi maddeleyerek sabit kapsamlı (Fixed Price) veya efor bazlı (Time & Material) şeffaf teklif dökümanımızı en geç 48 saat içinde tarafınıza sunuyoruz.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         İLETİŞİM FORMU & KANALLAR
+         =================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="badge">
+            <i class="fa-solid fa-envelope"></i> Bize Ulaşın
+          </div>
+          <h2 class="section-title">
+            Yeni Bir Proje <span class="text-gradient">Başlatalım</span>
+          </h2>
+          <p class="section-desc">
+            Aklınızdaki fikri, mevcut yazılım ihtiyacınızı veya teknik sorularınızı paylaşın; mühendislik ekibimiz 24 saat içinde yanıtlasın.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Sol Bilgi Kolonu -->
+          <div class="contact-info-col">
+            <div class="contact-card-box">
+              <div class="contact-channel">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="channel-detail">
+                  <h4>Merkez Ofis</h4>
+                  <p>Levent, Büyükdere Cad. No: 195, Şişli / İstanbul</p>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="channel-detail">
+                  <h4>E-Posta</h4>
+                  <a href="mailto:info@konhan.com">info@konhan.com</a><br>
+                  <a href="mailto:contact@konhansoftware.com">contact@konhansoftware.com</a>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="channel-detail">
+                  <h4>Telefon & WhatsApp</h4>
+                  <a href="tel:+902120000000">+90 (212) 000 00 00</a>
+                </div>
+              </div>
+
+              <div class="contact-channel">
+                <div class="channel-icon">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div class="channel-detail">
+                  <h4>Çalışma Saatleri</h4>
+                  <p>Hafta içi: 09:00 - 18:30 (Mühendislik Desteği: 7/24)</p>
+                </div>
+              </div>
+
+              <div class="quick-connect-links">
+                <a href="https://github.com/konhansoftware" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">
+                  <i class="fa-brands fa-github"></i> GitHub Profilimiz
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-sm">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sağ İletişim Formu -->
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="userName">Adınız Soyadınız *</label>
+                  <input type="text" id="userName" class="form-control" placeholder="Örn: Ahmet Yılmaz" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="userEmail">Kurumsal E-Posta *</label>
+                  <input type="email" id="userEmail" class="form-control" placeholder="ahmet@sirketiniz.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="userPhone">Telefon Numaranız</label>
+                  <input type="tel" id="userPhone" class="form-control" placeholder="+90 (5XX) XXX XX XX">
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType">Hizmet Türü *</label>
+                  <select id="projectType" class="form-control" required>
+                    <option value="" disabled selected>Seçiniz</option>
+                    <option value="saas">Özel SaaS & Web Platformu</option>
+                    <option value="ai">Yapay Zekâ & LLM Entegrasyonu</option>
+                    <option value="mobile">Mobil Uygulama (iOS & Android)</option>
+                    <option value="cloud">Bulut Mimarisi & DevOps</option>
+                    <option value="consulting">Teknoloji Danışmanlığı & Kod İncelemesi</option>
+                  </select>
+                </div>
+
+                <div class="form-group form-full">
+                  <label for="userMessage">Proje Açıklaması & Beklentileriniz *</label>
+                  <textarea id="userMessage" class="form-control" rows="4" placeholder="Projenizin hedefleri, mevcut altyapınız ve tahmini takviminiz hakkında bilgi verin..." required></textarea>
+                </div>
+
+                <div class="form-full">
+                  <button type="submit" id="submitBtn" class="btn btn-primary btn-lg" style="width: 100%;">
+                    <i class="fa-solid fa-paper-plane"></i> Mesajı Gönder
+                  </button>
+                </div>
+              </div>
+
+              <!-- Dinamik Başarı Bildirimi -->
+              <div id="formNotification" class="form-notification"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER (ALT BİLGİ ALANI)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Marka & Açıklama -->
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="brand-icon-box">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <span class="brand-text">KONHAN <span>SOFTWARE</span></span>
           </a>
-          <div class="flex items-center gap-4 text-slate-400 text-sm">
-            <a href="https://github.com/konhansoftware" target="_blank" class="hover:text-white transition-colors">GitHub</a>
-            <span>•</span>
-            <a href="https://instagram.com/konhansoftware" target="_blank" class="hover:text-white transition-colors">Instagram</a>
+          <p>
+            Yenilikçi teknolojiler, ölçeklenebilir bulut mimarileri ve yapay zekâ destekli çözümlerle global standartlarda yazılım mühendisliği.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com/konhansoftware" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Twitter X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="py-12 px-6 border-t border-white/5 bg-[#07080B] text-slate-500 text-sm">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-      <div class="flex items-center gap-2">
-        <span class="font-bold text-slate-300 font-mono">KONHAN SOFTWARE</span>
-        <span>— Bağımsız Yazılım Stüdyosu</span>
+        <!-- Hızlı Bağlantılar -->
+        <div class="footer-col">
+          <h4>Hızlı Menü</h4>
+          <ul class="footer-nav">
+            <li><a href="#about">Kurumsal Vizyon</a></li>
+            <li><a href="#services">Hizmetlerimiz</a></li>
+            <li><a href="#tech">Teknoloji Ekosistemi</a></li>
+            <li><a href="#projects">Başarı Hikayeleri</a></li>
+            <li><a href="#estimator">Maliyet Hesaplayıcı</a></li>
+            <li><a href="#faq">Sıkça Sorulan Sorular</a></li>
+          </ul>
+        </div>
+
+        <!-- Hizmet Alanları -->
+        <div class="footer-col">
+          <h4>Çözümlerimiz</h4>
+          <ul class="footer-nav">
+            <li><a href="#services">Kurumsal Web & SaaS</a></li>
+            <li><a href="#services">Yapay Zekâ & LLM Entegrasyonu</a></li>
+            <li><a href="#services">Cross-Platform Mobil</a></li>
+            <li><a href="#services">Kubernetes & DevOps</a></li>
+            <li><a href="#services">API & Mikroservisler</a></li>
+            <li><a href="#services">Siber Güvenlik & Pentest</a></li>
+          </ul>
+        </div>
+
+        <!-- Bülten & İletişim -->
+        <div class="footer-col footer-newsletter">
+          <h4>Bültenden Haberdar Olun</h4>
+          <p>Yazılım dünyasındaki en son trendler ve teknoloji bültenimiz için abone olun.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Bültenimize başarıyla kaydoldunuz!'); this.reset();">
+            <input type="email" class="form-control" placeholder="E-posta adresiniz" required>
+            <button type="submit" class="btn btn-primary" aria-label="Abone Ol">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
       </div>
-      <div>
-        © 2026 Konhan Software. Tüm hakları saklıdır.
+
+      <!-- Footer Alt Satır -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>Konhan Software</strong>. Tüm hakları saklıdır.
+        </div>
+        <div class="github-deploy-badge">
+          <i class="fa-solid fa-code-branch"></i>
+          <span>konhansoftware.github.io</span>
+          <span style="color: var(--emerald);">• Canlı Dağıtım</span>
+        </div>
+        <div>
+          Designed & Engineered with <i class="fa-solid fa-heart" style="color: #f43f5e;"></i> by Konhan
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- ===================================================================
+       SABİT YÜZEN BUTONLAR (WHATSAPP & YUKARI ÇIK)
+       =================================================================== -->
+  <div class="floating-actions" aria-label="Hızlı Erişim Butonları">
+    <a href="https://wa.me/905550000000?text=Merhaba,%20Konhan%20Software%20web%20sitenizden%20yazıyorum.%20Yazılım%20projemiz%20hakkında%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" class="floating-btn btn-whatsapp" aria-label="WhatsApp İletişim">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button class="floating-btn btn-scroll-top" id="scrollTopBtn" aria-label="Yukarı Kaydır">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- ===================================================================
+       İNTERAKTİF PROJE DETAY MODALI
+       =================================================================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Kapat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3 id="modalTitle" style="color: #ffffff; margin-bottom: 1rem; font-size: 1.4rem;">Proje Başlığı</h3>
+      <div id="modalBody">
+        <!-- Dinamik Proje İçeriği JS ile Yüklenir -->
+      </div>
+    </div>
+  </div>
+
+  <!-- İnteraktif JavaScript Dosyası -->
+  <script src="js/main.js"></script>
 </body>
 </html>
-
