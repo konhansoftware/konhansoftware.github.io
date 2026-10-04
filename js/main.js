@@ -301,62 +301,60 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalClose = document.getElementById('modalCloseBtn');
 
   const projectDetails = {
-    nexus: {
-      title: "Nexus AI: Kurumsal Karar Destek Platformu",
+    kurumsal: {
+      title: "Kurumsal Web Sitesi & Dijital Kimlik Çözümleri",
       content: `
-        <p style="margin-bottom:1rem; color:var(--text-muted);">Nexus AI, büyük veri setlerini gerçek zamanlı olarak işleyerek şirket yöneticilerine stratejik tahminleme ve karar desteği sağlayan yeni nesil bir yapay zekâ altyapısıdır.</p>
+        <p style="margin-bottom:1rem; color:var(--text-muted);">Konya ve Türkiye genelindeki işletmeler için modern, hızlı, mobil uyumlu ve arama motorlarında (SEO) üst sıralara çıkan kurumsal web siteleri geliştiriyoruz.</p>
         <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
-          <li>LLM tabanlı akıllı doğal dil sorgulama motoru</li>
-          <li>Gerçek zamanlı veri akışı ve anomali tespiti</li>
-          <li>Çoklu bulut ortamlarında çalışan mikroservis mimarisi</li>
-          <li>%45 operasyonel maliyet tasarrufu</li>
+          <li>%100 Mobil, tablet ve masaüstü duyarlı (responsive) tasarım</li>
+          <li>Arama motoru optimizasyonu (Google SEO uyumlu altyapı)</li>
+          <li>WhatsApp ve doğrudan arama hızlı buton entegrasyonları</li>
+          <li>Hızlı yüklenen, temiz ve modern kodlama standartları</li>
         </ul>
         <div style="margin-top:1.5rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">FastAPI</span>
-          <span class="project-tag">PyTorch</span>
-          <span class="project-tag">React</span>
-          <span class="project-tag">Docker</span>
+          <span class="project-tag">HTML5 & CSS3</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">SEO</span>
+          <span class="project-tag">Responsive</span>
         </div>
       `
     },
-    omnipay: {
-      title: "OmniPay: Yeni Nesil FinTech & Ödeme Ağ Geçidi",
+    panel: {
+      title: "Özel Web Yönetim Panelleri & Otomasyon",
       content: `
-        <p style="margin-bottom:1rem; color:var(--text-muted);">OmniPay, saniyede 15.000+ işlemi sıfır kesintiyle işleyen, PCI-DSS uyumlu küresel bir ödeme ve dijital cüzdan mimarisidir.</p>
+        <p style="margin-bottom:1rem; color:var(--text-muted);">İşletmenizin günlük iş akışını, müşteri kayıtlarını ve verilerini kolayca yönetebileceğiniz güvenli, web tabanlı özel yönetim panelleri inşa ediyoruz.</p>
         <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
-          <li>Uluslararası para transferi ve anlık kur dönüştürme</li>
-          <li>Yapay zekâ destekli sahtekarlık (Fraud) önleme sistemi</li>
-          <li>3D Secure 2.0 ve biyometrik doğrulama entegrasyonu</li>
-          <li>99.999% SLA süreklilik garantisi</li>
+          <li>Kullanıcı dostu, sade ve anlaşılır kontrol arayüzü</li>
+          <li>Veritabanı yönetimi ve güvenli veri depolama</li>
+          <li>Rol tabanlı yetkilendirme ve yönetici girişleri</li>
+          <li>İhtiyaca özel dinamik raporlama ve filtreleme</li>
         </ul>
         <div style="margin-top:1.5rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="project-tag">Go / Golang</span>
-          <span class="project-tag">Node.js</span>
-          <span class="project-tag">Kubernetes</span>
-          <span class="project-tag">Redis</span>
-          <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">Web Panel</span>
+          <span class="project-tag">Veritabanı</span>
+          <span class="project-tag">API</span>
+          <span class="project-tag">Güvenlik</span>
         </div>
       `
     },
-    logicloud: {
-      title: "LogiCloud: Küresel Lojistik & IoT Filo Yönetimi",
+    eticaret: {
+      title: "Ürün Tanıtım & Katalog / E-Ticaret Çözümleri",
       content: `
-        <p style="margin-bottom:1rem; color:var(--text-muted);">3.000'den fazla aracın anlık telemetri ve rota verilerini haritalandırarak optimum yakıt ve rota verimliliği sağlayan IoT tabanlı lojistik yönetim yazılımı.</p>
+        <p style="margin-bottom:1rem; color:var(--text-muted);">Ürünlerinizi en etkili şekilde sergileyebileceğiniz, WhatsApp üzerinden anında sipariş alabileceğiniz veya çevrimiçi satış yapabileceğiniz modern katalog sistemleri.</p>
         <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
-          <li>Canlı GPS ve sensör verisi telemetri takibi</li>
-          <li>Optimum rota hesaplama ile %28 yakıt tasarrufu</li>
-          <li>Mobil sürücü ve sevkiyat uygulamaları</li>
-          <li>Otomatik irsaliye ve gümrük entegrasyonu</li>
+          <li>Kategorilendirilmiş, zengin görselli ürün listeleme</li>
+          <li>Tek tıkla WhatsApp sipariş ve teklif talep butonu</li>
+          <li>Hızlı arama ve filtreleme özellikleri</li>
+          <li>Sosyal medya (Instagram / Facebook) entegrasyonu</li>
         </ul>
         <div style="margin-top:1.5rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
-          <span class="project-tag">Flutter</span>
-          <span class="project-tag">NestJS</span>
-          <span class="project-tag">Kafka</span>
-          <span class="project-tag">AWS IoT</span>
+          <span class="project-tag">Katalog</span>
+          <span class="project-tag">WhatsApp Sipariş</span>
+          <span class="project-tag">E-Ticaret</span>
+          <span class="project-tag">Hızlı Satış</span>
         </div>
       `
     }
