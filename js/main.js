@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Kurumsal Web Sitesi & Dijital Kimlik Çözümleri",
       content: `
         <p style="margin-bottom:1rem; color:var(--text-muted);">Konya ve Türkiye genelindeki işletmeler için modern, hızlı, mobil uyumlu ve arama motorlarında (SEO) üst sıralara çıkan kurumsal web siteleri geliştiriyoruz.</p>
-        <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
+        <h4 style="margin:1rem 0 0.5rem; color:var(--text-highlight);">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
           <li>%100 Mobil, tablet ve masaüstü duyarlı (responsive) tasarım</li>
           <li>Arama motoru optimizasyonu (Google SEO uyumlu altyapı)</li>
@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Özel Web Yönetim Panelleri & Otomasyon",
       content: `
         <p style="margin-bottom:1rem; color:var(--text-muted);">İşletmenizin günlük iş akışını, müşteri kayıtlarını ve verilerini kolayca yönetebileceğiniz güvenli, web tabanlı özel yönetim panelleri inşa ediyoruz.</p>
-        <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
+        <h4 style="margin:1rem 0 0.5rem; color:var(--text-highlight);">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
           <li>Kullanıcı dostu, sade ve anlaşılır kontrol arayüzü</li>
           <li>Veritabanı yönetimi ve güvenli veri depolama</li>
@@ -343,7 +343,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Ürün Tanıtım & Katalog / E-Ticaret Çözümleri",
       content: `
         <p style="margin-bottom:1rem; color:var(--text-muted);">Ürünlerinizi en etkili şekilde sergileyebileceğiniz, WhatsApp üzerinden anında sipariş alabileceğiniz veya çevrimiçi satış yapabileceğiniz modern katalog sistemleri.</p>
-        <h4 style="margin:1rem 0 0.5rem; color:#fff;">Öne Çıkan Özellikler:</h4>
+        <h4 style="margin:1rem 0 0.5rem; color:var(--text-highlight);">Öne Çıkan Özellikler:</h4>
         <ul style="padding-left:1.2rem; color:var(--text-muted); line-height:1.7;">
           <li>Kategorilendirilmiş, zengin görselli ürün listeleme</li>
           <li>Tek tıkla WhatsApp sipariş ve teklif talep butonu</li>
